@@ -7,7 +7,7 @@ let page: Page;
 
 BeforeAll(async () => {
   console.log('Launch Browser using Playwright and Chromium browser, performed once, before the start of all test scenarios.');
-  browser = await chromium.launch({headless: false});
+  browser = await chromium.launch({headless: true});
 });
 
 AfterAll(async () => {
